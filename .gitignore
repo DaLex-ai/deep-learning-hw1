@@ -1,0 +1,33 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Downloaded datasets
+data/
+datasets/
+
+# Development tools
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Local environment files
+.env
+.env.*
+
+# Temporary files
+*.tmp
+*.log
