@@ -1,0 +1,8 @@
+{
+  "python": "3.13.16",
+  "torch": "2.11.0+cu130",
+  "transformers": "5.22.0",
+  "datasets": "4.8.5",
+  "device": "Tesla T4",
+  "fast_mode": false
+}

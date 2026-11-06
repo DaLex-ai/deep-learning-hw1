@@ -1,0 +1,14 @@
+{
+  "train": {
+    "kept": 92320,
+    "removed_duplicates": 0
+  },
+  "validation": {
+    "kept": 11540,
+    "removed_duplicates": 0
+  },
+  "test": {
+    "kept": 11580,
+    "removed_duplicates": 0
+  }
+}

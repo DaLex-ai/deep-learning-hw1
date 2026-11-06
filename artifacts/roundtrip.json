@@ -1,0 +1,14 @@
+{
+  "train": {
+    "checked": 92320,
+    "noncanonical_bio": 3210
+  },
+  "validation": {
+    "checked": 11540,
+    "noncanonical_bio": 393
+  },
+  "test": {
+    "checked": 11580,
+    "noncanonical_bio": 464
+  }
+}

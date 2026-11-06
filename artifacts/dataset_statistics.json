@@ -1,0 +1,35 @@
+{
+  "train": {
+    "sentences": 92320,
+    "entities": {
+      "LOC": 71090,
+      "PER": 33282,
+      "MISC": 23594,
+      "ORG": 20236
+    },
+    "mean_sentence_words": 19.610669410745235,
+    "mean_span_words": 1.3126071173128568
+  },
+  "validation": {
+    "sentences": 11540,
+    "entities": {
+      "ORG": 2710,
+      "LOC": 8851,
+      "MISC": 2642,
+      "PER": 4007
+    },
+    "mean_sentence_words": 18.78838821490468,
+    "mean_span_words": 1.3194398682042834
+  },
+  "test": {
+    "sentences": 11580,
+    "entities": {
+      "LOC": 8596,
+      "PER": 3489,
+      "MISC": 2962,
+      "ORG": 3051
+    },
+    "mean_sentence_words": 18.773056994818653,
+    "mean_span_words": 1.3563929715990717
+  }
+}
