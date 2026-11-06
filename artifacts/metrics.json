@@ -1,0 +1,151 @@
+{
+  "track": "nlp",
+  "model": "cointegrated/rubert-tiny2",
+  "revision": "e8ed3b0c8bbf4fb6984c3de043bf7d2f4e5969ae",
+  "dataset": "Babelscape/wikineural",
+  "classes": [
+    "LOC",
+    "MISC",
+    "ORG",
+    "PER"
+  ],
+  "n_train": 15000,
+  "n_val": 2000,
+  "n_test": 2000,
+  "params_total": 29098929,
+  "baseline": {
+    "majority": {
+      "f1_micro": 0.46771714066103,
+      "f1_macro": 0.40223578193906184,
+      "precision": 0.6045702930948833,
+      "recall": 0.3813851457223441
+    },
+    "random_head": {
+      "f1_micro": 0.029435132987779496,
+      "f1_macro": 0.027572158544311078,
+      "precision": 0.01673838209982788,
+      "recall": 0.12190535882168599
+    }
+  },
+  "final": {
+    "f1_micro": 0.8210365853658537,
+    "f1_macro": 0.7783517170073853,
+    "precision": 0.8055638647921028,
+    "recall": 0.8371153248368045,
+    "token_f1": 0.8446646692786356,
+    "per_type": {
+      "LOC": {
+        "precision": 0.8861386138613861,
+        "recall": 0.9144316730523627,
+        "f1-score": 0.9000628535512257,
+        "support": 1566
+      },
+      "MISC": {
+        "precision": 0.6640776699029126,
+        "recall": 0.6979591836734694,
+        "f1-score": 0.6805970149253732,
+        "support": 490
+      },
+      "ORG": {
+        "precision": 0.662431941923775,
+        "recall": 0.6939163498098859,
+        "f1-score": 0.6778087279480037,
+        "support": 526
+      },
+      "PER": {
+        "precision": 0.8381240544629349,
+        "recall": 0.8724409448818897,
+        "f1-score": 0.8549382716049382,
+        "support": 635
+      }
+    }
+  },
+  "ablation": {
+    "setting": "freeze",
+    "split": "validation",
+    "full": {
+      "metrics": {
+        "f1_micro": 0.8169188020994134,
+        "f1_macro": 0.7718879280142983,
+        "precision": 0.8049893519926985,
+        "recall": 0.8292071450955814,
+        "token_f1": 0.8335714285714285,
+        "per_type": {
+          "LOC": {
+            "precision": 0.8706624605678234,
+            "recall": 0.9049180327868852,
+            "f1-score": 0.887459807073955,
+            "support": 1525
+          },
+          "MISC": {
+            "precision": 0.6561844863731656,
+            "recall": 0.6789587852494577,
+            "f1-score": 0.6673773987206822,
+            "support": 461
+          },
+          "ORG": {
+            "precision": 0.6911447084233261,
+            "recall": 0.6896551724137931,
+            "f1-score": 0.6903991370010787,
+            "support": 464
+          },
+          "PER": {
+            "precision": 0.8307086614173228,
+            "recall": 0.854251012145749,
+            "f1-score": 0.8423153692614771,
+            "support": 741
+          }
+        }
+      },
+      "seconds": 65.97403515000008,
+      "trainable": 29098929
+    },
+    "frozen": {
+      "metrics": {
+        "f1_micro": 0.522923588039867,
+        "f1_macro": 0.3694279694791412,
+        "precision": 0.5563803464121597,
+        "recall": 0.49326230021936696,
+        "token_f1": 0.5318818040435459,
+        "per_type": {
+          "LOC": {
+            "precision": 0.6702367531003383,
+            "recall": 0.779672131147541,
+            "f1-score": 0.720824492270385,
+            "support": 1525
+          },
+          "MISC": {
+            "precision": 0.27607361963190186,
+            "recall": 0.09761388286334056,
+            "f1-score": 0.14423076923076922,
+            "support": 461
+          },
+          "ORG": {
+            "precision": 0.5939849624060151,
+            "recall": 0.17025862068965517,
+            "f1-score": 0.2646566164154104,
+            "support": 464
+          },
+          "PER": {
+            "precision": 0.3438735177865613,
+            "recall": 0.3522267206477733,
+            "f1-score": 0.34800000000000003,
+            "support": 741
+          }
+        }
+      },
+      "seconds": 33.586543432999974,
+      "trainable": 2817
+    }
+  },
+  "errors": {
+    "correct": 2646,
+    "boundary": 173,
+    "type": 290,
+    "missed": 82,
+    "spurious": 118
+  },
+  "device": "Tesla T4",
+  "train_time_sec": 65.97403515000008,
+  "fast_mode": false
+}
